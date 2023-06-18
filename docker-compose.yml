@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  app:
+    container_name: weather-api
+    image: weather-api:develop
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python main.py
+    ports:
+      - "8000:8000"
