@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-from time_it import time_def
 
 
 class Scraper:
@@ -8,7 +7,6 @@ class Scraper:
     def scrape_weather_data():
         url = "https://www.cpa.unicamp.br"
 
-        @time_def
         def cepagri_scrapping():
             response = requests.get(url)
             response.raise_for_status()
